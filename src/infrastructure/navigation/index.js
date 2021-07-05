@@ -8,5 +8,5 @@ export const Navigation = () => {
   const [isAuthenticated, setIsAuthenticated] = useContext(
     AuthenticationContext
   );
-  return isAuthenticated ? <AuthNavigator /> : <AppNavigator />;
+  return isAuthenticated ? <AppNavigator /> : <AuthNavigator />;
 };
